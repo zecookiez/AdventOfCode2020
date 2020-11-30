@@ -8,7 +8,7 @@ All of these solutions will be written and verified with Python, along with the 
 
 ## Notable Nights
 
-None of as yet.
+None as of yet.
 
 ## Tasks
 
