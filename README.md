@@ -8,14 +8,14 @@ All of these solutions will be written and verified with Python, along with the 
 
 ## Notable Nights
 
-None as of yet.
+- Day 1: Site went down, and apparently I did not refresh it fast enough.
 
 ## Tasks
 
 | Day | Name                               | Part 1 | Part 2 | Runtime |
 | --- | ---------------------------------- |:------:|:------:| -------:|
-| 1   | To be continued...                 |        |        |         |
+| 1   | Report Repair                      | 622nd  | 545th  | 1ms     |
 
 __Current score:__ 0 points
 
-__Total runtime:__ 0 milliseconds
+__Total runtime:__ 1 millisecond
