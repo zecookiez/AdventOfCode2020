@@ -9,6 +9,7 @@ All of these solutions will be written and verified with Python, along with the 
 ## Notable Nights
 
 - Day 1: Site went down, and apparently I did not refresh it fast enough.
+- Day 3: Kept the extra newlines in the data, immediately regretted my decision.
 
 ## Tasks
 
@@ -16,7 +17,8 @@ All of these solutions will be written and verified with Python, along with the 
 | --- | :--------------------------------- |:------ |:------ | :------------ | :------ |
 | 1   | Report Repair                      | 622nd  | 545th  | 0             | 1ms     |
 | 2   | Password Philosophy                | 24th   | 34th   | 77 + 67 = 144 | 2ms     |
+| 3   | Toboggan Trajectory                | 306th  | 174th  | 0             | 1ms     |
 
 __Current score:__ 144 points
 
-__Total runtime:__ 3 milliseconds
+__Total runtime:__ 4 milliseconds
