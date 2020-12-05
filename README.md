@@ -19,7 +19,8 @@ All of these solutions will be written and verified with Python, along with the 
 | 2   | Password Philosophy                | 24th   | 34th   | 77 + 67 = 144 | 2ms     |
 | 3   | Toboggan Trajectory                | 306th  | 174th  | 0             | 1ms     |
 | 4   | Passport Processing                | 139th  | 51st   | 0 + 50 = 50   | 4ms     |
+| 5   | Binary Boarding                    | 39th   | 22nd   | 62 + 79 = 141 | 2ms     |
 
-__Current score:__ 194 points
+__Current score:__ 335 points
 
-__Total runtime:__ 8 milliseconds
+__Total runtime:__ 10 milliseconds
