@@ -1,7 +1,7 @@
 ## AdventOfCode2020
 A series of challenges in the spirit of the holidays 🎄
 
-All of these solutions will be written and verified with Python, along with the following goals:
+All of these solutions will be written and verified with Python with the following goals in mind:
 1. __Efficiency,__ where an efficient algorithm will do the job without over-killing the problem. I am aiming for a cumulative sub-15 seconds using plain Python (no PyPy or JIT compilers) for these tasks.
 2. __Organization.__ Avoid duplicate code for better readability and modularity. No 🍝 code!
 3. __Keep it simple!__
@@ -20,7 +20,8 @@ All of these solutions will be written and verified with Python, along with the 
 | 3   | Toboggan Trajectory                | 306th  | 174th  | 0             | 1ms     |
 | 4   | Passport Processing                | 139th  | 51st   | 0 + 50 = 50   | 4ms     |
 | 5   | Binary Boarding                    | 39th   | 22nd   | 62 + 79 = 141 | 2ms     |
+| 6   | Custom Customs                     | 113th  | 23rd   | 0 + 78 = 78   | 2ms     |
 
-__Current score:__ 335 points
+__Current score:__ 413 points
 
-__Total runtime:__ 10 milliseconds
+__Total runtime:__ 12 milliseconds
