@@ -21,7 +21,8 @@ All of these solutions will be written and verified with Python with the followi
 | 4   | Passport Processing                | 139th  | 51st   | 0 + 50 = 50   | 4ms     |
 | 5   | Binary Boarding                    | 39th   | 22nd   | 62 + 79 = 141 | 2ms     |
 | 6   | Custom Customs                     | 113th  | 23rd   | 0 + 78 = 78   | 2ms     |
+| 7   | Handy Haversacks                   | 14th   | 24th   | 87 + 77 = 164 | 4ms     |
 
-__Current score:__ 413 points
+__Current score:__ 577 points
 
-__Total runtime:__ 12 milliseconds
+__Total runtime:__ 16 milliseconds
