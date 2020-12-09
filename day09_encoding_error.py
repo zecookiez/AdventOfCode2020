@@ -6,6 +6,7 @@ data = [int(i[:-1]) for i in open("input/day09.txt", "r").readlines()]
 def solve(lines):
 
     lines = list(map(int, lines))
+    lines.sort()  # Quick and dirty sort does it again (reduced to 1ms from 6ms)
 
     def find_invalid(data):
 
