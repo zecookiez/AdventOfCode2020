@@ -5,18 +5,18 @@ data = [int(i[:-1]) for i in open("input/day09.txt", "r").readlines()]
 
 def solve(lines):
 
-    lines = list(map(int, lines))
-    lines.sort()  # Quick and dirty sort does it again (reduced to 1ms from 6ms)
+    lines = tuple(map(int, lines))
 
     def find_invalid(data):
 
         # This part seems to be taking the majority of the time
-        # While this is technically O(N), we can optimize one of the loops out using dictionary and set
+        # While this is technically O(N), we can optimize one of the loops out using a dictionary
         # Hint: After every check, only 1 new item is added in and only 1 item is taken out
 
         for i in range(25, len(data)):
-            if all(data[a] + data[b] != data[i] for a in range(i - 25, i) for b in range(i - 25, a)):
-                return data[i]
+            tgt = data[i]
+            if all(data[a] + data[b] != tgt for a in range(i - 25, i) for b in range(i - 25, a)):
+                return tgt
 
         raise ValueError("No invalid numbers found.")
 
