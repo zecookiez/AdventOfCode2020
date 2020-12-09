@@ -10,6 +10,7 @@ All of these solutions will be written and verified with Python with the followi
 
 - Day 1: Site went down, and apparently I did not refresh it fast enough.
 - Day 3: Kept the extra newlines in the data, immediately regretted my decision.
+- Day 9: Two lessons learned: always preprocess input, and always go for the simpler solution (unless it's too slow but I should've checked).
 
 ## Tasks
 
@@ -22,8 +23,9 @@ All of these solutions will be written and verified with Python with the followi
 | 5   | Binary Boarding                    | 39th   | 22nd   | 62 + 79 = 141 | 2ms     |
 | 6   | Custom Customs                     | 113th  | 23rd   | 0 + 78 = 78   | 2ms     |
 | 7   | Handy Haversacks                   | 14th   | 24th   | 87 + 77 = 164 | 4ms     |
-| 8   | Handheld Halting                   | 52nd   | 23rd   | 49 + 78 = 127 | 10ms     |
+| 8   | Handheld Halting                   | 52nd   | 23rd   | 49 + 78 = 127 | 10ms    |
+| 9   | Encoding Error                     | 261st  | 817th  | 0             | 6ms     |
 
 __Current score:__ 704 points
 
-__Total runtime:__ 26 milliseconds
+__Total runtime:__ 32 milliseconds
