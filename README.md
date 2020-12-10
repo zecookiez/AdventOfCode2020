@@ -11,6 +11,7 @@ All of these solutions will be written and verified with Python with the followi
 - Day 1: Site went down, and apparently I did not refresh it fast enough.
 - Day 3: Kept the extra newlines in the data, immediately regretted my decision.
 - Day 9: Two lessons learned: always preprocess input, and always go for the simpler solution (unless it's too slow but I should've checked).
+- Day 10: Should've read the end of the problem first, because I solved the wrong problem for part 1.
 
 ## Tasks
 
@@ -25,7 +26,8 @@ All of these solutions will be written and verified with Python with the followi
 | 7   | Handy Haversacks                   | 14th   | 24th   | 87 + 77 = 164 | 4ms     |
 | 8   | Handheld Halting                   | 52nd   | 23rd   | 49 + 78 = 127 | 10ms    |
 | 9   | Encoding Error                     | 261st  | 817th  | 0             | 5ms     |
+| 10  | Adapter Array                      | 255th  | 50th   | 0 + 51 = 51   | 1ms     |
 
-__Current score:__ 704 points
+__Current score:__ 755 points
 
-__Total runtime:__ 31 milliseconds
+__Total runtime:__ 32 milliseconds
