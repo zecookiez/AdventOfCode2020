@@ -27,7 +27,8 @@ All of these solutions will be written and verified with Python with the followi
 | 8   | Handheld Halting                   | 52nd   | 23rd   | 49 + 78 = 127 | 10ms    |
 | 9   | Encoding Error                     | 261st  | 817th  | 0             | 5ms     |
 | 10  | Adapter Array                      | 255th  | 50th   | 0 + 51 = 51   | 1ms     |
+| 11  | Seating System                     | 20th   | 21st   | 81 + 80 = 161 | 1572ms  |
 
-__Current score:__ 755 points
+__Current score:__ 916 points
 
-__Total runtime:__ 32 milliseconds
+__Total runtime:__ 1604 milliseconds
