@@ -6,7 +6,7 @@ data = [list(map("L#.".find, i[:-1])) for i in open("input/day11.txt", "r").read
 def solve(data):
 
     # This is quite brutal to optimize...
-    # Went from ~10 seconds to 785ms (130ms with PyPy)
+    # Went from ~10 seconds to 448ms (110ms with PyPy)
     #
     # Notable optimizations:
     #  - Flattening the 2D array into 1D
@@ -14,21 +14,25 @@ def solve(data):
     #  - Applying updates instead of making a new grid
     #  - Keeping track of the seat indices (the rest are unnecessary)
     #    - Only check the seats that are recently updated
+    #  - Use padding to stop checking for out-of-bounds
 
     N, M = len(data), len(data[0]) + 1
     arr = []
     for i in data:
         # Flattening the array could cause wraparound, so I padded with 3
         arr.extend(i + [3])
+    arr.extend([3] * M)  # More padding to stop checking for out-of-bounds
 
     def calculate(grid, is_direct):
 
-        seats = [i for i, val in enumerate(grid) if val <= 1]
+        seats = (i for i, val in enumerate(grid) if val <= 1)
 
         def next_grid(grid, is_direct):
 
             updates = []
-            length = len(grid)
+            # Would not recommend this for anything other than marginal speed improvements
+            update_append = updates.append
+            MOVES = ~M, -M, -M + 1, -1, 1, M - 1, M, M + 1
 
             for i in seats:
 
@@ -36,20 +40,20 @@ def solve(data):
                 target = 5 - is_direct  # 4 for part 1, 5 for part 2
 
                 # Try all 8 neighbors
-                for move in ~M, -M, -M + 1, -1, 1, M - 1, M, M + 1:
+                for move in MOVES:
                     ind = i + move
-                    while not is_direct and 0 <= ind < length and grid[ind] == 2:
+                    while not is_direct and grid[ind] == 2:
                         ind += move
-                    if 0 <= ind < length and grid[ind] == 1:
+                    if grid[ind] == 1:
                         target -= 1
                         if val == 0:  # Will never satisfy the check
                             break
                         elif target == 0:  # Already satisfied
-                            updates.append(i)
+                            update_append(i)
                             break
                 else:
                     if val == 0:
-                        updates.append(i)
+                        update_append(i)
 
             return updates
 
