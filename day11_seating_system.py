@@ -6,64 +6,62 @@ data = [list(map("L#.".find, i[:-1])) for i in open("input/day11.txt", "r").read
 def solve(data):
 
     # This is quite brutal to optimize...
-    # Went from ~10 seconds to 1.6s
+    # Went from ~10 seconds to 785ms (130ms with PyPy)
     #
     # Notable optimizations:
     #  - Flattening the 2D array into 1D
     #  - Short-circuit the neighbor count if necessary
     #  - Applying updates instead of making a new grid
     #  - Keeping track of the seat indices (the rest are unnecessary)
+    #    - Only check the seats that are recently updated
 
     N, M = len(data), len(data[0]) + 1
-    grid = []
+    arr = []
     for i in data:
-        # Flattening the array could cause wraparound, so I padded with -1
-        grid.extend(i + [-1])
-    seats = [i for i, val in enumerate(grid) if 0 <= val <= 1]
+        # Flattening the array could cause wraparound, so I padded with 3
+        arr.extend(i + [3])
 
-    def next_grid(grid, is_direct):
+    def calculate(grid, is_direct):
 
-        updates = []
-        length = len(grid)
-        for i in seats:
+        seats = [i for i, val in enumerate(grid) if val <= 1]
 
-            val = grid[i]
-            target = 5 - is_direct  # 4 for part 1, 5 for part 2
+        def next_grid(grid, is_direct):
 
-            # Try all 8 neighbors
-            for move in ~M, -M, -M + 1, -1, 1, M - 1, M, M + 1:
-                ind = i + move
-                while not is_direct and 0 <= ind < length and grid[ind] == 2:
-                    ind += move
-                if 0 <= ind < length and grid[ind] == 1:
-                    target -= 1
-                    if val == 0:  # Will never satisfy the check
-                        break
-                    elif target == 0:  # Already satisfied
+            updates = []
+            length = len(grid)
+
+            for i in seats:
+
+                val = grid[i]
+                target = 5 - is_direct  # 4 for part 1, 5 for part 2
+
+                # Try all 8 neighbors
+                for move in ~M, -M, -M + 1, -1, 1, M - 1, M, M + 1:
+                    ind = i + move
+                    while not is_direct and 0 <= ind < length and grid[ind] == 2:
+                        ind += move
+                    if 0 <= ind < length and grid[ind] == 1:
+                        target -= 1
+                        if val == 0:  # Will never satisfy the check
+                            break
+                        elif target == 0:  # Already satisfied
+                            updates.append(i)
+                            break
+                else:
+                    if val == 0:
                         updates.append(i)
-                        break
-            else:
-                if val == 0:
-                    updates.append(i)
 
-        return updates
+            return updates
 
-    part_1 = grid[:]
-    part_2 = grid[:]
+        seats = next_grid(grid, is_direct)
+        while seats:
+            for ind in seats:
+                grid[ind] ^= 1  # Toggle empty/occupied
+            seats = next_grid(grid, is_direct)
 
-    updates = next_grid(part_1, True)
-    while updates:
-        for ind in updates:
-            part_1[ind] ^= 1  # Toggle empty/occupied
-        updates = next_grid(part_1, True)
+        return grid.count(1)
 
-    updates = next_grid(part_2, False)
-    while updates:
-        for ind in updates:
-            part_2[ind] ^= 1
-        updates = next_grid(part_2, False)
-
-    return sum(part_1[i] for i in seats), sum(part_2[i] for i in seats)
+    return calculate(arr[:], True), calculate(arr, False)
 
 
 t_start = time()
