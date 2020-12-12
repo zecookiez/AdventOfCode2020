@@ -12,6 +12,7 @@ All of these solutions will be written and verified with Python with the followi
 - Day 3: Kept the extra newlines in the data, immediately regretted my decision.
 - Day 9: Two lessons learned: always preprocess input, and always go for the simpler solution (unless it's too slow but I should've checked).
 - Day 10: Should've read the end of the problem first, because I solved the wrong problem for part 1.
+- Day 12: Getting good sleep is important!
 
 ## Tasks
 
@@ -28,7 +29,8 @@ All of these solutions will be written and verified with Python with the followi
 | 9   | Encoding Error                     | 261st  | 817th  | 0             | 5ms     |
 | 10  | Adapter Array                      | 255th  | 50th   | 0 + 51 = 51   | 1ms     |
 | 11  | Seating System                     | 20th   | 21st   | 81 + 80 = 161 | 1572ms  |
+| 12  | Rain Risk                          | 455th  | 228th  | 0             | 1ms     |
 
 __Current score:__ 916 points
 
-__Total runtime:__ 1604 milliseconds
+__Total runtime:__ 1605 milliseconds
