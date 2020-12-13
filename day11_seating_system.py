@@ -22,50 +22,59 @@ def solve(data):
         # Flattening the array could cause wraparound, so I padded with 3
         arr.extend(i + [3])
     arr.extend([3] * M)  # More padding to stop checking for out-of-bounds
+    MOVES = -1, 1, M - 1, M, M + 1, ~M, -M, -M + 1
 
-    def calculate(grid, is_direct):
-
+    def simulate(grid, nxt):
         seats = (i for i, val in enumerate(grid) if val <= 1)
-
-        def next_grid(grid, is_direct):
-
-            updates = []
-            # Would not recommend this for anything other than marginal speed improvements
-            update_append = updates.append
-            MOVES = ~M, -M, -M + 1, -1, 1, M - 1, M, M + 1
-
-            for i in seats:
-
-                val = grid[i]
-                target = 5 - is_direct  # 4 for part 1, 5 for part 2
-
-                # Try all 8 neighbors
-                for move in MOVES:
-                    ind = i + move
-                    while not is_direct and grid[ind] == 2:
-                        ind += move
-                    if grid[ind] == 1:
-                        target -= 1
-                        if val == 0:  # Will never satisfy the check
-                            break
-                        elif target == 0:  # Already satisfied
-                            update_append(i)
-                            break
-                else:
-                    if val == 0:
-                        update_append(i)
-
-            return updates
-
-        seats = next_grid(grid, is_direct)
-        while seats:
+        while seats := nxt(grid, seats):
             for ind in seats:
                 grid[ind] ^= 1  # Toggle empty/occupied
-            seats = next_grid(grid, is_direct)
-
         return grid.count(1)
 
-    return calculate(arr[:], True), calculate(arr, False)
+    def next_grid_pt_1(grid, seats):
+        updates = []
+        # Would not recommend this for anything other than marginal speed improvements
+        update_append = updates.append
+        for i in seats:
+            if grid[i]:
+                target = 4
+                for move in MOVES:
+                    if grid[i + move] == 1:
+                        if target == 1:  # Already satisfied
+                            update_append(i)
+                            break
+                        target -= 1
+            elif not any(grid[i + move] == 1 for move in MOVES):
+                update_append(i)
+        return updates
+
+    def next_grid_pt_2(grid, seats):
+        updates = []
+        update_append = updates.append
+        for i in seats:
+            if grid[i]:
+                target = 5
+                for move in MOVES:
+                    ind = i + move
+                    while (value := grid[ind]) == 2:
+                        ind += move
+                    if value == 1:
+                        if target == 1:  # Already satisfied
+                            update_append(i)
+                            break
+                        target -= 1
+            else:
+                for move in MOVES:
+                    ind = i + move
+                    while (value := grid[ind]) == 2:
+                        ind += move
+                    if value == 1:
+                        break
+                else:
+                    update_append(i)
+        return updates
+
+    return simulate(arr[:], next_grid_pt_1), simulate(arr, next_grid_pt_2)
 
 
 t_start = time()
