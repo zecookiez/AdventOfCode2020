@@ -30,7 +30,8 @@ All of these solutions will be written and verified with Python with the followi
 | 10  | Adapter Array                      | 255th  | 50th   | 0 + 51 = 51   | 1ms     |
 | 11  | Seating System                     | 20th   | 21st   | 81 + 80 = 161 | 448ms   |
 | 12  | Rain Risk                          | 455th  | 228th  | 0             | 1ms     |
+| 13  | Shuttle Search                     | 29th   | 53rd   | 72 + 48 = 120 | 1ms     |
 
-__Current score:__ 916 points
+__Current score:__ 1036 points
 
-__Total runtime:__ 481 milliseconds
+__Total runtime:__ 482 milliseconds
