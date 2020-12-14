@@ -13,6 +13,7 @@ All of these solutions will be written and verified with Python with the followi
 - Day 9: Two lessons learned: always preprocess input, and always go for the simpler solution (unless it's too slow but I should've checked).
 - Day 10: Should've read the end of the problem first, because I solved the wrong problem for part 1.
 - Day 12: Getting good sleep is important!
+- Day 14: Reading is hard ;-;
 
 ## Tasks
 
@@ -31,7 +32,8 @@ All of these solutions will be written and verified with Python with the followi
 | 11  | Seating System                     | 20th   | 21st   | 81 + 80 = 161 | 401ms   |
 | 12  | Rain Risk                          | 455th  | 228th  | 0             | 1ms     |
 | 13  | Shuttle Search                     | 29th   | 53rd   | 72 + 48 = 120 | 1ms     |
+| 14  | Docking Data                       | 155th  | 456th  | 0             | 32ms     |
 
 __Current score:__ 1036 points
 
-__Total runtime:__ 435 milliseconds
+__Total runtime:__ 467 milliseconds
