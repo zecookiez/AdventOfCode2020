@@ -33,8 +33,9 @@ All of these solutions will be written and verified with Python with the followi
 | 12  | Rain Risk                          | 455th  | 228th  | 0             | 1ms     |
 | 13  | Shuttle Search                     | 29th   | 53rd   | 72 + 48 = 120 | 1ms     |
 | 14  | Docking Data                       | 155th  | 456th  | 0             | 32ms    |
-| 15  | Rambunctious Recitation            | 251sa  | 73rd   | 0 + 28 = 28   | 5399ms  |
+| 15  | Rambunctious Recitation            | 251st  | 73rd   | 0 + 28 = 28   | 5373ms  |
+| 16  | Ticket Translation                 | 90th   | 72nd   | 11 + 29 = 40  | 26ms    |
 
-__Current score:__ 1036 points
+__Current score:__ 1104 points
 
 __Total runtime:__ 5814 milliseconds
