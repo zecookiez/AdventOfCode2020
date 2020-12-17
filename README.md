@@ -35,7 +35,8 @@ All of these solutions will be written and verified with Python with the followi
 | 14  | Docking Data                       | 155th  | 456th  | 0             | 32ms    |
 | 15  | Rambunctious Recitation            | 251st  | 73rd   | 0 + 28 = 28   | 5373ms  |
 | 16  | Ticket Translation                 | 90th   | 72nd   | 11 + 29 = 40  | 26ms    |
+| 17  | Conway Cube                        | 14th   | 18th   | 87 + 83 = 170 | 302ms   |
 
-__Current score:__ 1104 points
+__Current score:__ 1274 points
 
-__Total runtime:__ 5814 milliseconds
+__Total runtime:__ 6116 milliseconds
