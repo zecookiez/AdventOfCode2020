@@ -14,6 +14,7 @@ All of these solutions will be written and verified with Python with the followi
 - Day 10: Should've read the end of the problem first, because I solved the wrong problem for part 1.
 - Day 12: Getting good sleep is important!
 - Day 14: Reading is hard ;-;
+- Day 18: Took a "nap" and woke up way after the contest began...
 
 ## Tasks
 
@@ -36,7 +37,8 @@ All of these solutions will be written and verified with Python with the followi
 | 15  | Rambunctious Recitation            | 251st  | 73rd   | 0 + 28 = 28   | 5373ms  |
 | 16  | Ticket Translation                 | 90th   | 72nd   | 11 + 29 = 40  | 26ms    |
 | 17  | Conway Cube                        | 14th   | 18th   | 87 + 83 = 170 | 302ms   |
+| 18  | Operation Order                    | 3016th | 1753rd | 0             | 36ms    |
 
 __Current score:__ 1274 points
 
-__Total runtime:__ 6116 milliseconds
+__Total runtime:__ 6152 milliseconds
