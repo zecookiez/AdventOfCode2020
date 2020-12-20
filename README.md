@@ -39,7 +39,8 @@ All of these solutions will be written and verified with Python with the followi
 | 17  | Conway Cube                        | 14th   | 18th   | 87 + 83 = 170 | 302ms   |
 | 18  | Operation Order                    | 3016th | 1753rd | 0             | 36ms    |
 | 19  | Monster Messages                   | 404th  | 132nd  | 0             | 133ms   |
+| 20  | Jurassic Jigsaw                    | 236th  | 158th  | 0             | 228ms   |
 
 __Current score:__ 1274 points
 
-__Total runtime:__ 6285 milliseconds
+__Total runtime:__ 6513 milliseconds
