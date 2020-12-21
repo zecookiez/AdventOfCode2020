@@ -15,6 +15,7 @@ All of these solutions will be written and verified with Python with the followi
 - Day 12: Getting good sleep is important!
 - Day 14: Reading is hard ;-;
 - Day 18: Took a "nap" and woke up way after the contest began...
+- Day 21: I don't understand how I misunderstood the problem this badly.
 
 ## Tasks
 
@@ -40,7 +41,8 @@ All of these solutions will be written and verified with Python with the followi
 | 18  | Operation Order                    | 3016th | 1753rd | 0             | 36ms    |
 | 19  | Monster Messages                   | 404th  | 132nd  | 0             | 133ms   |
 | 20  | Jurassic Jigsaw                    | 236th  | 158th  | 0             | 228ms   |
+| 21  | Allergen Assessment                | 1026th | 647th  | 0             | 3ms     |
 
 __Current score:__ 1274 points
 
-__Total runtime:__ 6513 milliseconds
+__Total runtime:__ 6516 milliseconds
