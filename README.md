@@ -16,6 +16,7 @@ All of these solutions will be written and verified with Python with the followi
 - Day 14: Reading is hard ;-;
 - Day 18: Took a "nap" and woke up way after the contest began...
 - Day 21: I don't understand how I misunderstood the problem this badly.
+- Day 22: Lost all my time from a misleading example and a hidden key point. The bad streak continues...
 
 ## Tasks
 
@@ -42,7 +43,8 @@ All of these solutions will be written and verified with Python with the followi
 | 19  | Monster Messages                   | 404th  | 132nd  | 0             | 133ms   |
 | 20  | Jurassic Jigsaw                    | 236th  | 158th  | 0             | 228ms   |
 | 21  | Allergen Assessment                | 1026th | 647th  | 0             | 3ms     |
+| 22  | Crab Combat                        | 117th  | 263rd  | 0             | 1730ms  |
 
 __Current score:__ 1274 points
 
-__Total runtime:__ 6516 milliseconds
+__Total runtime:__ 8246 milliseconds
