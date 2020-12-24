@@ -37,7 +37,7 @@ def solve(lines):
     #  - Use faster hash (the deck changes by 1-2 items every turn)
     #  - Change the list into a deque
     #  - Memoization
-    
+
     def helper(d1, d2):
         seen = set()
         while d1 and d2:
