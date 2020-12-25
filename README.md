@@ -53,3 +53,10 @@ All of these solutions will be written and verified with Python with the followi
 __Current score:__ 1274 points
 
 __Total runtime:__ 14998 milliseconds (under the 15 second limit by 2ms!) 
+
+## Calendar Art
+
+<p align="center" width="100%">
+  <i>Credits to Eric Wastl (the creator of AOC) for the amazing ASCII calendar art!</i> <br>
+  <img align="center" width="80%" src="/pics/calendar.png"> 
+</p>
