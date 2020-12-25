@@ -58,5 +58,5 @@ __Total runtime:__ 14998 milliseconds (under the 15 second limit by 2ms!)
 
 <p align="center" width="100%">
   <i>Credits to Eric Wastl (the creator of AOC) for the amazing ASCII calendar art!</i> <br>
-  <img align="center" width="80%" src="/pics/calendar.png"> 
+  <img align="center" src="/pics/calendar.png"> 
 </p>
