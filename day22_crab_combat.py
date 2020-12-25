@@ -34,9 +34,7 @@ def solve(lines):
         return d1 if d1 else d2
 
     # Possible optimizations that I may try later:
-    #  - Use faster hash (the deck changes by 1-2 items every turn)
     #  - Change the list into a deque
-    #  - Memoization
 
     def helper(d1, d2):
         seen = set()
@@ -45,8 +43,8 @@ def solve(lines):
             if label in seen:
                 return 1, d1
             seen.add(label)
-            a, *d1 = d1
-            b, *d2 = d2
+            a = d1.pop(0)
+            b = d2.pop(0)
             if a <= len(d1) and b <= len(d2):
                 if helper(d1[:a], d2[:b])[0] == 1:
                     d1.extend([a, b])

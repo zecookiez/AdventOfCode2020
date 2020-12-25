@@ -45,10 +45,11 @@ All of these solutions will be written and verified with Python with the followi
 | 19  | Monster Messages                   | 404th  | 132nd  | 0             | 133ms   |
 | 20  | Jurassic Jigsaw                    | 236th  | 158th  | 0             | 228ms   |
 | 21  | Allergen Assessment                | 1026th | 647th  | 0             | 3ms     |
-| 22  | Crab Combat                        | 117th  | 263rd  | 0             | 1730ms  |
+| 22  | Crab Combat                        | 117th  | 263rd  | 0             | 1370ms  |
 | 23  | Crab Cups                          | 614th  | 139th  | 0             | 5985ms  |
 | 24  | Lobby Layout                       | 368th  | 173rd  | 0             | 208ms   |
+| 25  | Combo Breaker                      | 392nd  | 321st  | :(            | 919ms   |
 
 __Current score:__ 1274 points
 
-__Total runtime:__ 14439 milliseconds
+__Total runtime:__ 14998 milliseconds (under the 15 second limit by 2ms!) 
