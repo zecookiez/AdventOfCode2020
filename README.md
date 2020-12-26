@@ -60,3 +60,15 @@ __Total runtime:__ 14998 milliseconds (under the 15 second limit by 2ms!)
   <i>Credits to Eric Wastl (the creator of AOC) for the amazing ASCII calendar art!</i> <br>
   <img align="center" src="/pics/calendar.png"> 
 </p>
+
+## Final Reflections
+
+- Keeping some templates would be nice (double newline input parsing, bipartite matching, linked list)
+- I should brush up on regexes
+- I should practice number theory and linked lists problems
+- Be less afraid of attempting backtracking
+- Set an alarm for 30 minutes before every night
+- Reading skills are important ;-;
+- Debugging skills are important ;-;
+
+With that being said, I am more than happy about my performance this year. This is not only the first year I've made it to the top 100, but the first year I completed all 25 days as well. Looking forward to Advent of Code 2021!
